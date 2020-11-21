@@ -5,10 +5,19 @@
         "es6": true,
         "node": true
     },
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaVersion": 12,
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaFeatures": {
+                        "modules": true,
+                        "experimentalObjectRestSpread": true
+        }
     },
+    "plugins": [
+        "babel"
+      ],
     "rules": {
     }
+    
 }
